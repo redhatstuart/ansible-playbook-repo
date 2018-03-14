@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "administratorLogin": {
+            "value": "azureadmin"
+        },
+        "administratorLoginPassword": {
+            "value": null
+        },
+        "serverName": {
+            "value": "utcdemo1"
+        },
+        "location": {
+            "value": "eastus2"
+        },
+        "skuName": {
+            "value": "GP_Gen4_2"
+        },
+        "skuTier": {
+            "value": "GeneralPurpose"
+        },
+        "skuCapacity": {
+            "value": 2
+        },
+        "skuFamily": {
+            "value": "Gen4"
+        },
+        "skuSizeMB": {
+            "value": 5120
+        },
+        "version": {
+            "value": "5.7"
+        },
+        "backupRetentionDays": {
+            "value": 7
+        },
+        "geoRedundantBackup": {
+            "value": "Disabled"
+        }
+    }
+}
