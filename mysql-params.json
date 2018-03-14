@@ -6,7 +6,7 @@
             "value": "azureadmin"
         },
         "administratorLoginPassword": {
-            "value": null
+            "value": "prattr00t"
         },
         "serverName": {
             "value": "utcdemo1"
