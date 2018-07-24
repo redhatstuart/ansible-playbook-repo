@@ -2,21 +2,21 @@
   connection: local
   gather_facts: no
   tasks:
-  - name: Create a managed Azure Container Services (AKS) instance  
-  azure_rm_aks:
-      name: aksgbbready
-      location: westus
-      resource_group: gbbready19
-      dns_prefix: gbbready19
-      linux_profile:
-        admin_username: gbbdemo
-        ssh_key: "REPLACE"
-      service_principal:
-        client_id: "SPAPPID"
-        client_secret: "SPPASSWORD"
-      agent_pool_profiles:
-        - name: default
-          count: 2
-          vm_size: Standard_D2_v2
-      tags:
-        Environment: Production
+    - name: Create a managed Azure Container Services (AKS) instance
+      azure_rm_aks:
+         name: aksgbbready2
+         location: westus
+         resource_group: gbbready19
+         dns_prefix: gbbready192
+         linux_profile:
+           admin_username: gbbdemo
+           ssh_key: "REPLACE"
+         service_principal:
+           client_id: "SPAPPID"
+           client_secret: "SPPASSWORD"
+         agent_pool_profiles:
+           - name: default
+             count: 2
+             vm_size: Standard_D2_v2
+         tags:
+           Environment: Production
