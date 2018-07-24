@@ -13,7 +13,5 @@
             value: ansibleadmin
           sshKeyData:
             value: "REPLACE"
-          dnsNameForPublicIP:
-            value: "centos-arm"
         template_link: 'https://raw.githubusercontent.com/stuartatmicrosoft/ansible-playbook-repo/master/centos7-prem.json'
       register: azure
