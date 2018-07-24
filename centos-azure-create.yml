@@ -1,11 +1,11 @@
 - hosts: localhost
   connection: local
   gather_facts: no
-  cloud_environment: AzureCloud
   tasks:
     - name: Deploy ARM Template - CentOS VM
       azure_rm_deployment:
         state: present
+        cloud_environment: AzureCloud
         location: eastus2
         resource_group_name: AnsibleTestCentOSRG
         parameters:
