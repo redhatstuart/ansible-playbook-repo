@@ -10,7 +10,7 @@
 #   cloudenv: AzureUSGovernment
     dbserver: mm-db-demo
     dbserverdns: mm-db-demo
-    username: demouser
+    username: mmuser
     rgname: mm-demo
 
   tasks:
