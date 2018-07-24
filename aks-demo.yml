@@ -4,10 +4,10 @@
   tasks:
     - name: Create a managed Azure Container Services (AKS) instance
       azure_rm_aks:
-         name: aksgbbready2
+         name: aksgbbready222
          location: westus
-         resource_group: gbbready19
-         dns_prefix: gbbready192
+         resource_group: gbbready222
+         dns_prefix: gbbready222
          linux_profile:
            admin_username: gbbdemo
            ssh_key: "REPLACE"
@@ -16,7 +16,7 @@
            client_secret: "SPPASSWORD"
          agent_pool_profiles:
            - name: default
-             count: 2
+             count: 3
              vm_size: Standard_D2_v2
          tags:
            Environment: Production
